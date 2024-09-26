@@ -1,0 +1,20 @@
+{% extends 'padre.html' %}
+<html>
+<head><title>Buscar Producto</title></head>
+<body>
+    <h1>Buscar Producto</h1>
+    <form method="get">
+        <input type="text" name="nombre" placeholder="Nombre del producto">
+        <button type="submit">Buscar</button>
+    </form>
+    <ul>
+        {% for producto in productos %}
+            <li>{{ producto.nombre }} - ${{ producto.precio }}</li>
+        {% empty %}
+            <li>No se encontraron productos.</li>
+
+            <p> hola mundo</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
