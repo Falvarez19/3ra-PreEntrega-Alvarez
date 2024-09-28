@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Api 3 Coder</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light static-top">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'agregar_producto' %}">Agregar Productos</a>
+            <a class="navbar-brand" href="{% url 'buscar_producto' %}">Buscar Productos</a>
+            <a class="navbar-brand" href="{% url 'inicio' %}">inicio</a>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <!-- Contenido principal aquí -->
+    </div>
+</body>
+</html>

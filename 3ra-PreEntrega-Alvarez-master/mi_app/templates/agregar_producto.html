@@ -1,0 +1,15 @@
+{% extends 'padre.html' %}
+
+{% block contenidoQueCambia %}
+<html>
+<head><title>Agregar Producto</title></head>
+<body>
+    <h1>Agregar nuevo producto</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Agregar</button>
+    </form>
+</body>
+</html>
+{% endblock contenidoQueCambia %}
