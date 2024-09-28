@@ -1,6 +1,13 @@
 from django.shortcuts import render, redirect
 from .models import *
 from .forms import *
+import os
+from django.conf import settings
+
+def inicio(request):
+    print(os.path.join(settings.BASE_DIR, 'mi_app', 'templates', 'inicio.html'))
+    return render(request, 'inicio.html')
+
 
 def agregar_producto(request):
     if request.method == 'POST':
@@ -19,6 +26,3 @@ def buscar_producto(request):
     else:
         productos = Producto.objects.all()
     return render(request, 'buscar_producto.html', {'productos': productos})
-
-def inicio(request):
-    return render(request, 'mi_app/inicio.html')

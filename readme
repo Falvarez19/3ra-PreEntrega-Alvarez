@@ -1,0 +1,37 @@
+# Proyecto Django de Coderhouse
+
+Este proyecto es una aplicación web Django desarrollada para el curso de Desarrollo Web en Coderhouse. Implementa un sistema CRUD (Crear, Leer, Actualizar, Eliminar) para productos y permite buscar productos en la base de datos.
+
+## Características
+
+- Herencia de HTML utilizando plantillas base.
+- Al menos tres modelos definidos en `models.py`.
+- Formularios para la inserción de datos en la base de datos.
+- Un formulario para realizar búsquedas de productos.
+- Cumple con el patrón Modelo-Vista-Template (MVT) de Django.
+
+## Configuración inicial
+
+Para ejecutar este proyecto, sigue estos pasos:
+
+1. Clona el repositorio:
+git clone (https://github.com/Falvarez19/3ra-PreEntrega-Alvarez)
+2. Realiza las migraciones necesarias:
+python manage.py migrate
+3. Inicia el servidor de desarrollo:
+python manage.py runserver
+
+
+## Estructura del proyecto
+
+- `mi_app/`: Directorio de la aplicación que contiene los modelos, vistas, formularios y plantillas.
+- `templates/`: Contiene las plantillas HTML para la aplicación.
+- `static/`: Contiene los archivos CSS y JavaScript.
+- `mi_proyecto/`: Configuración y archivos principales del proyecto Django.
+
+## Funcionalidades
+
+- **Agregar Productos**: Accesible desde `/mi_app/agregar/`, permite a los usuarios agregar nuevos productos a la base de datos.
+- **Buscar Productos**: Accesible desde `/mi_app/buscar/`, facilita la búsqueda de productos por nombre.
+- **Inicio**: Página principal del sitio accesible desde `/mi_app/`.
+
